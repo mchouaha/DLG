@@ -1,0 +1,18 @@
+<h2 class="help-title">HAVE A QUESTION? WE CAN HELP</h2>
+
+<app-horizontal-line [height]="'40px'"></app-horizontal-line>
+
+<br/>
+
+<div class="accordion" *ngFor="let faq of faqs">
+    <div [ngClass]="isOpen && selectedId === faq.id ? 'accordion-header-open' : 'accordion-header'">
+        <app-accordion-id [id]="faq.id"></app-accordion-id>
+        <app-accordion-question [question]="faq.question"></app-accordion-question>
+        <app-accordion-icon [previousSelectedId]="selectedId" [selectedId]="faq.id" (eventEmitter)="eventEmitter($event)"></app-accordion-icon>
+    </div>
+
+    <div class="accordion-section" [@openClose]="isOpen && selectedId === faq.id ? 'open' : 'closed'">
+        <app-accordion-answer [answer]="faq.answer"></app-accordion-answer>
+    </div>
+    <app-horizontal-line [height]="'2px'"></app-horizontal-line>
+</div>

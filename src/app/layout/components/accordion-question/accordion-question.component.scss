@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'oswald-regular';
+    src: url('../../../../assets/fonts/oswald-bold.ttf') format('truetype');
+}
+
+:host {
+    padding: 0px 30px;
+    flex-grow: 2;
+    width: 70%;
+    
+    p {
+        font-family: 'oswald-regular';
+        font-size: 15px;
+
+        @media only screen and (max-width: 375px) {
+          }
+    }
+}

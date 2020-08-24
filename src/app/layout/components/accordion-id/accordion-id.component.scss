@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'oswald-bold';
+    src: url('../../../../assets/fonts/oswald-bold.ttf') format('truetype');
+}
+
+:host {
+
+    span {
+        font-family: 'oswald-bold';
+        font-size: 28px;
+    }
+}

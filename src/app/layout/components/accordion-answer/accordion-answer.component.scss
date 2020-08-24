@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'oswald-regular';
+    src: url('../../../../assets/fonts/oswald-regular.ttf') format('truetype');
+}
+
+:host {
+    p {
+        font-family: 'oswald-regular';
+        padding: 0 30px;
+    }
+}

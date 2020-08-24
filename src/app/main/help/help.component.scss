@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'oswald-bold';
+    src: url('../../../assets/fonts/oswald-bold.ttf') format('truetype');
+}
+
+.help-title {
+    font-family: 'oswald-bold';
+    font-size: 40px;
+    color: #1b1d1b;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .accordion-header {
+        display: inherit;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 20px;
+        height: 80px;
+        background-color: #fff;
+    }
+
+    .accordion-header-open {
+        display: inherit;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        height: 80px;
+        background-color: #a9a9a9;
+    }
+    
+    .accordion-section {
+        background-color: #fff;
+    }
+}
